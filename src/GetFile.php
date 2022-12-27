@@ -1,10 +1,10 @@
 <?php
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\get_value;
-use function Formapro\Values\get_values;
-use function Formapro\Values\set_value;
+use function Legolabs\Values\get_value;
+use function Legolabs\Values\get_values;
+use function Legolabs\Values\set_value;
 
 /**
  * @see https://core.telegram.org/bots/api#getfile

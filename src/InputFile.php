@@ -1,5 +1,5 @@
 <?php
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
 /**
  * @see https://core.telegram.org/bots/api#sending-files

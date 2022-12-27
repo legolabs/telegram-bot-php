@@ -1,6 +1,6 @@
 <?php
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
 interface ReplyMarkup
 {

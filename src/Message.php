@@ -1,10 +1,12 @@
 <?php
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\get_object;
-use function Formapro\Values\get_value;
+use function Legolabs\Values\get_object;
+use function Legolabs\Values\get_value;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class Message
 {
     private $values = [];
@@ -24,6 +26,11 @@ class Message
     public function getChat(): Chat
     {
         return get_object($this, 'chat', Chat::class);
+    }
+
+    public function getReplyToMessage(): ?Message
+    {
+    	return get_object($this, 'reply_to_message', Message::class);
     }
 
     public function getFrom(): ?User

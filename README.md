@@ -8,8 +8,8 @@ Telegram bot as it should be.
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\SetWebhook;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\SetWebhook;
 use function GuzzleHttp\Psr7\str;
 
 $bot = new Bot('telegramToken');
@@ -28,7 +28,7 @@ echo str($response);
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
+use Legolabs\TelegramBot\Bot;
 use function GuzzleHttp\Psr7\str;
 
 $bot = new Bot('telegramToken');
@@ -42,9 +42,9 @@ echo str($response);
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendMessage;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);
@@ -65,9 +65,9 @@ use `sendDocument`
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendMessage;
 
 $requestBody = file_get_contents('php://input');
 $data = json_decode($requestBody, true);
@@ -96,12 +96,12 @@ gif, pdf and zip files._ (from documentation)
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendDocument;
-use Formapro\TelegramBot\FileUrl;
-use Formapro\TelegramBot\FileId;
-use Formapro\TelegramBot\InputFile;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendDocument;
+use Legolabs\TelegramBot\FileUrl;
+use Legolabs\TelegramBot\FileId;
+use Legolabs\TelegramBot\InputFile;
 
 $requestBody = file_get_contents('php://input');
 $data = json_decode($requestBody, true);
@@ -133,9 +133,9 @@ $bot->sendDocument($sendDocument);
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendInvoice;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendInvoice;
 
 $requestBody = file_get_contents('php://input');
 $data = json_decode($requestBody, true);
@@ -163,11 +163,11 @@ $bot->sendInvoice($sendInvoice);
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendMessage;
-use Formapro\TelegramBot\KeyboardButton;
-use Formapro\TelegramBot\ReplyKeyboardMarkup;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\KeyboardButton;
+use Legolabs\TelegramBot\ReplyKeyboardMarkup;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);
@@ -190,11 +190,11 @@ Request Contacts:
 
 ```php
 <?php
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
-use Formapro\TelegramBot\SendMessage;
-use Formapro\TelegramBot\KeyboardButton;
-use Formapro\TelegramBot\ReplyKeyboardMarkup;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
+use Legolabs\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\KeyboardButton;
+use Legolabs\TelegramBot\ReplyKeyboardMarkup;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);
@@ -219,11 +219,11 @@ Url:
 
 ```php
 <?php
-use Formapro\TelegramBot\InlineKeyboardButton;
-use Formapro\TelegramBot\InlineKeyboardMarkup;
-use Formapro\TelegramBot\SendMessage;
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
+use Legolabs\TelegramBot\InlineKeyboardButton;
+use Legolabs\TelegramBot\InlineKeyboardMarkup;
+use Legolabs\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);
@@ -244,11 +244,11 @@ CallbackQuery:
 
 ```php
 <?php
-use Formapro\TelegramBot\InlineKeyboardButton;
-use Formapro\TelegramBot\InlineKeyboardMarkup;
-use Formapro\TelegramBot\SendMessage;
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
+use Legolabs\TelegramBot\InlineKeyboardButton;
+use Legolabs\TelegramBot\InlineKeyboardMarkup;
+use Legolabs\TelegramBot\SendMessage;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);
@@ -269,9 +269,9 @@ $bot->sendMessage($sendMessage);
 
 ```php
 <?php
-use Formapro\TelegramBot\AnswerCallbackQuery;
-use Formapro\TelegramBot\Bot;
-use Formapro\TelegramBot\Update;
+use Legolabs\TelegramBot\AnswerCallbackQuery;
+use Legolabs\TelegramBot\Bot;
+use Legolabs\TelegramBot\Update;
 
 $requestBody = file_get_contents('php://input'); 
 $data = json_decode($requestBody, true);

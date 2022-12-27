@@ -10,7 +10,7 @@
     "guzzlehttp/guzzle": "^6.3"
   },
   "autoload": {
-    "psr-4": { "Formapro\\TelegramBot\\": "src/" }
+    "psr-4": { "Legolabs\\TelegramBot\\": "src/" }
   },
   "extra": {
     "branch-alias": {

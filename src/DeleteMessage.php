@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\get_value;
-use function Formapro\Values\set_value;
+use function Legolabs\Values\get_value;
+use function Legolabs\Values\set_value;
 
 class DeleteMessage
 {

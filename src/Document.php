@@ -1,7 +1,7 @@
 <?php
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\get_value;
+use function Legolabs\Values\get_value;
 
 /**
  * @see https://core.telegram.org/bots/api#document

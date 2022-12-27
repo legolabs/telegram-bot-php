@@ -1,11 +1,13 @@
 <?php
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\get_value;
-use function Formapro\Values\get_values;
-use function Formapro\Values\set_value;
+use function Legolabs\Values\get_value;
+use function Legolabs\Values\get_values;
+use function Legolabs\Values\set_value;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class SendMessage
 {
     private $values = [];
@@ -41,5 +43,15 @@ class SendMessage
     public function setReplyMarkup(ReplyMarkup $replyMarkup): void
     {
         set_value($this, 'reply_markup', json_encode(get_values($replyMarkup)));
+    }
+
+    public function setDisableWebPagePreview(bool $disable): void
+    {
+    	set_value($this, 'disable_web_page_preview', $disable);
+    }
+
+    public function setReplyToMessageId(int $replyToMessageId): void
+    {
+    	set_value($this, 'reply_to_message_id', $replyToMessageId);
     }
 }

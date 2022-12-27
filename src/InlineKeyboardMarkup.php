@@ -1,8 +1,8 @@
 <?php
 
-namespace Formapro\TelegramBot;
+namespace Legolabs\TelegramBot;
 
-use function Formapro\Values\add_object;
+use function Legolabs\Values\add_object;
 
 class InlineKeyboardMarkup implements ReplyMarkup
 {

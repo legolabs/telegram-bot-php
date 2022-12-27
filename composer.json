@@ -7,7 +7,7 @@
   "require": {
     "php": "^8.1",
     "legolabs/values": "^0.5.1",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^7.5"
   },
   "autoload": {
     "psr-4": { "Legolabs\\TelegramBot\\": "src/" }

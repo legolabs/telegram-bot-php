@@ -4,7 +4,9 @@ namespace Legolabs\TelegramBot;
 
 use function Legolabs\Values\get_object;
 use function Legolabs\Values\get_value;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class Chat
 {
     const PRIVATE = 'private';

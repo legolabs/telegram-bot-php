@@ -3,7 +3,9 @@
 namespace Legolabs\TelegramBot;
 
 use function Legolabs\Values\add_object;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class InlineKeyboardMarkup implements ReplyMarkup
 {
     private $values = [];

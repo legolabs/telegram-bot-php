@@ -3,7 +3,9 @@
 namespace Legolabs\TelegramBot;
 
 use function Legolabs\Values\get_value;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class SuccessfulPayment
 {
     private $values = [];

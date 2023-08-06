@@ -5,7 +5,9 @@ namespace Legolabs\TelegramBot;
 use function Legolabs\Values\get_object;
 use function Legolabs\Values\get_value;
 use function Legolabs\Values\set_values;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class Update
 {
     private $values = [];

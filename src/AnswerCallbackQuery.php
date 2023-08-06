@@ -3,7 +3,9 @@ namespace Legolabs\TelegramBot;
 
 use function Legolabs\Values\get_value;
 use function Legolabs\Values\set_value;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class AnswerCallbackQuery
 {
     private $values = [];

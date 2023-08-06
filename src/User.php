@@ -3,10 +3,12 @@
 namespace Legolabs\TelegramBot;
 
 use function Legolabs\Values\get_value;
+use AllowDynamicProperties;
 
 /**
  * https://core.telegram.org/bots/api#user
  */
+#[AllowDynamicProperties]
 class User
 {
     private $values = [];

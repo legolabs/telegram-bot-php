@@ -7,7 +7,9 @@ use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 use function Legolabs\Values\set_value;
 use function Legolabs\Values\get_values;
+use AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class Bot
 {
 	private $token;
